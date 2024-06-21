@@ -7,8 +7,6 @@
 //#include <windows.h>
 //#include <time.h>
 //#include <locale.h>
-
-
 using namespace std;
 
 static unsigned char signHeader[] = "QScalp History Data";
@@ -22,12 +20,15 @@ static unsigned char signHeader[] = "QScalp History Data";
 //byte		количество информационных потоков в файле
 //
 // CONNECTOR:TICKER:AUXCODE:NUMCODE:STEP
-// CONNECTOR – идентификатор коннектора/подключения, через который выполняется получение данных по инструменту;
-// TICKER – основной код инструмента (например, RIU3);
-// AUXCODE – вспомогательный код инструмента (например, SPBFUT, CME), в некоторых случаях отсутствует;
-// NUMCODE – цифровой код инструмента, в некоторых случаях отсутствует;
-// STEP – минимальный шаг цены инструмента.
-//
+class qsh {
+	string connector;// CONNECTOR – идентификатор коннектора/подключения, через который выполняется получение данных по инструменту;
+	string ticker;	// TICKER – основной код инструмента (например, RIU3);
+	string auxcode;	// AUXCODE – вспомогательный код инструмента (например, SPBFUT, CME), в некоторых случаях отсутствует;
+	string numcode;	// NUMCODE – цифровой код инструмента, в некоторых случаях отсутствует;
+	string step;	// STEP – минимальный шаг цены инструмента.
+public:
+	//
+};
 //3.2. Заголовок потока
 //Тип		Описание
 //byte		идентификатор потока:
@@ -77,6 +78,8 @@ int main(int argc, char* argv[]) {
 	uint32_t timeout = 60000;
 	int argn = 1;
 	//strcpy((char*)buffer, "");
+
+
 /*	
 	result = 0;
 	shift = 0;
