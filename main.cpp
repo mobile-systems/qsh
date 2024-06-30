@@ -1,4 +1,4 @@
-﻿//#include <stdio.h>
+//#include <stdio.h>
 //#include <string.h>
 #include <iostream>
 #include <cstring>
@@ -69,7 +69,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"ru_RU.UTF-8");
     
     cout << "Дата торгов: " << dateTrade << " Ближний фьючерс: " << nearTicker << " Дальний фьючерс: " << farTicker << endl;
 
