@@ -1,4 +1,4 @@
-//#include <stdio.h>
+﻿//#include <stdio.h>
 //#include <string.h>
 #include <iostream>
 #include <cstring>
@@ -21,12 +21,14 @@ static unsigned char signHeader[] = "QScalp History Data";
 //
 // CONNECTOR:TICKER:AUXCODE:NUMCODE:STEP
 class qsh {
-	string connector;// CONNECTOR – идентификатор коннектора/подключения, через который выполняется получение данных по инструменту;
-	string ticker;	// TICKER – основной код инструмента (например, RIU3);
-	string auxcode;	// AUXCODE – вспомогательный код инструмента (например, SPBFUT, CME), в некоторых случаях отсутствует;
-	string numcode;	// NUMCODE – цифровой код инструмента, в некоторых случаях отсутствует;
-	string step;	// STEP – минимальный шаг цены инструмента.
+	string _connector;// CONNECTOR – идентификатор коннектора/подключения, через который выполняется получение данных по инструменту;
+	string _ticker;	// TICKER – основной код инструмента (например, RIU3);
+	string _auxcode;	// AUXCODE – вспомогательный код инструмента (например, SPBFUT, CME), в некоторых случаях отсутствует;
+	string _numcode;	// NUMCODE – цифровой код инструмента, в некоторых случаях отсутствует;
+	string _step;	// STEP – минимальный шаг цены инструмента.
 public:
+	qsh (string connector, string ticker) : _connector(connector), _ticker(ticker) {}
+	~qsh() {};
 	//
 };
 //3.2. Заголовок потока
