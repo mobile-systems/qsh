@@ -1,12 +1,8 @@
-﻿//#include <stdio.h>
-//#include <string.h>
 #include <iostream>
 #include <cstring>
 #include <locale>
 #include <unistd.h>
-//#include <windows.h>
-//#include <time.h>
-//#include <locale.h>
+
 using namespace std;
 
 static unsigned char signHeader[] = "QScalp History Data";
